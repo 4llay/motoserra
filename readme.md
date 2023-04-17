@@ -1,0 +1,1 @@
+Olá, este projeto se baseia no sistema de dano do rpg chamado Ordem paranormal com o objetivo de achar o dano medio da arma motosserra.
