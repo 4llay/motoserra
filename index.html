@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Calculo de dano</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd773e3565.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="titulo">
+        <h1>Calculo de Dano da Motosserra</h1>
+    </div>
+
+        <button class="btn" id="btnReset" onclick="reset()"> Reset </button>
+        <button class="btn" id="btnUpgrade" onclick="upgrade()"> Upgrade </button><br>
+
+    <button id="btnMotoserra" onclick="rolarDados()"><img src="/img/motoserra.png" id="motoserraImg" draggable="false"></button>
+
+    <div id="status">
+        <label id="ultDano">Ultimo dano rolado:</label><br><br><br>
+        <label id="danoMedio">O dano medio foi:</label><br><br><br>
+        <label id="maiorDano">O maior dano foi:</label><br><br><br>
+        <label id="menorDano">O menor dano foi:</label>
+    </div>
+
+
+        <button class="btn" id="btnHistorico" onclick="hist()">Historico de dados</button>
+        <button class="btn" id="btnMedia" onclick="cemDados()">Media de 100 dados</button>
+        <button class="btn" id="btnCritico" onclick="ativarCritico()">Ativar dano critico</button>
+
+
+    <div id="divHistorico">
+        <label id="historico"> </label>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

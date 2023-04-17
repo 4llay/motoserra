@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+h1{
+    color: crimson;
+    font-family: "press start 2p";
+    text-decoration: underline;
+}
+#status{
+    font-family: "press start 2p";
+    color:white;
+    position: absolute;
+    left:350px;
+    top:150px;
+}
+#titulo{
+    position:relative;
+    top:25px;
+    left:80px;
+}
+#btnReset{
+    top:425px;
+    left:220px;
+}
+#btnUpgrade{
+    top:425px;
+    left:550px;
+}
+#divHistorico{
+    position:absolute;
+    left:1100px;
+    top:0px;
+    width: 410px;
+    height:1000px;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: outset;
+    color:white;
+}
+#historico{
+    position:absolute;
+    width: 400px;
+    overflow-wrap:break-word;
+    left: 1px;
+    background-color: red;
+}
+#btnMotoserra{
+    position: absolute;
+    top:100px;
+    left:50px;
+    background-color: transparent;
+    animation: idle 3s linear infinite;
+    border:none;
+    cursor:pointer;
+}
+.btn{
+    font-family: "press start 2p";
+    position:absolute;
+    width: 250px;
+    height: 100px;
+    left:100px;
+    top:560px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: black;
+    color:crimson;
+    cursor:pointer;
+}
+.btn:hover{
+    animation:select 1s linear infinite;
+}
+#btnMotoserra:hover{
+    animation:girar 0.0001s linear infinite;
+}
+#btnMedia{
+    left:390px;
+}
+#btnCritico{
+    left:680px
+}
+
+@keyframes idle{
+    50%{transform: rotateZ(-15deg);}
+}
+@keyframes select{
+    50%{transform:scale(1.03)}
+}
+@keyframes girar{
+    50%{transform: rotateZ(5deg)}
+}
