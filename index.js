@@ -8,12 +8,14 @@ audio = new Audio("/audio/chainsawSoundEffect.mp3");
 
 function paudio(onButton){
     if(onButton==true){
+        audio.currentTime=0;
         audio.autoplay=true;
         audio.loop=true;
         audio.play();
     } else {
         audio.autoplay=false;
         audio.loop=false;
+        audio.pause();
     }
 }
 
