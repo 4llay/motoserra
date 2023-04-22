@@ -6,6 +6,17 @@ let critico = false;
 let up = false;
 audio = new Audio("/audio/chainsawSoundEffect.mp3");
 
+function paudio(onButton){
+    if(onButton==true){
+        audio.autoplay=true;
+        audio.loop=true;
+        audio.play();
+    } else {
+        audio.autoplay=false;
+        audio.loop=false;
+    }
+}
+
 function rolarDados(){
    
     let d1 = Math.floor(Math.random()*6)+1;
@@ -55,8 +66,6 @@ function rolarDados(){
    if(ativo==true){
     document.getElementById("historico").innerHTML = historico.join();
    }
-
-    audio.play();
 }
 
 function cemDados(){
