@@ -42,11 +42,26 @@ function rolarDados(){
         dano = dano*2;
     }
 
+    String(dano);
+
     document.getElementById("ultDano").innerHTML = "Ultimo dano rolado: "+dano;
 
     //media do dano
     danoTotal.push(dano);
-    historico.unshift(dano);
+    if(dano<10){
+        historico.unshift("_" + dano + "DMG ")
+    } else{
+        historico.unshift(dano + "DMG ");
+    }
+
+    if(historico.length%3==0){
+        historico[0] = historico[0].replace(' ', '\n');
+    }
+
+    //apagar historico muito alto
+    if(historico.length>=100){
+        historico.pop();
+    }
 
     for(let i = 0; i<danoTotal.length; i++){
         media += danoTotal[i];
