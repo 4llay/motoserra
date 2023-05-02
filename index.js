@@ -59,7 +59,7 @@ function rolarDados(){
     }
 
     //apagar historico muito alto
-    if(historico.length>=100){
+    if(historico.length>=101){
         historico.pop();
     }
 
@@ -111,7 +111,7 @@ function isExtraDmg(dado) {
 function hist(){
     if(ativo==false){
         ativo=true;
-        document.getElementById("historico").innerHTML = historico.join();
+        document.getElementById("historico").innerHTML = ","+historico.join();
     } else {
         ativo=false;
         document.getElementById("historico").innerHTML = " ";
@@ -143,7 +143,7 @@ function reset(){
 function upgrade(){
     if(up==false){
         up=true;
-        document.getElementById("motoserraImg").src = "/img/motoserra2.png"
+        document.getElementById("motoserraImg").src = "/img/motoserra2.png";
     } else {
         up=false;
     }
