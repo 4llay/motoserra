@@ -13,17 +13,19 @@
                 <h1>Calculo de Dano da Motosserra</h1>
             </div>
             
-            <button id="btnMotoserra" onmouseover="paudio(true)" onmouseout="paudio(false)" onclick="rolarDados()"><img src="/img/motoserra.png" id="motoserraImg" draggable="false"></button>
-            
-            <div class="status">
-                <label class="status" id="ultDano">Ultimo dano rolado:</label><br>
-                <label class="status" id="danoMedio">O dano medio foi:</label><br>
-                <label class="status" id="maiorDano">O maior dano foi:</label><br>
-                <label class="status" id="menorDano">O menor dano foi:</label>
+            <div class="box1">
+                
+                <button id="btnMotoserra" onmouseover="paudio(true)" onmouseout="paudio(false)" onclick="rolarDados()"><img src="/img/motoserra.png" id="motoserraImg" draggable="false"></button>
+                
+                <div class="status">
+                    <label class="status" id="ultDano">Ultimo dano rolado:</label><br>
+                    <label class="status" id="danoMedio">O dano medio foi:</label><br>
+                    <label class="status" id="maiorDano">O maior dano foi:</label><br>
+                    <label class="status" id="menorDano">O menor dano foi:</label>
+                </div>
+                
             </div>
-            
-            
-            
+                
             <div class="butoes">        
                 <button class="btn" id="btnHistorico" onclick="hist()">Historico de dados</button>
                 <button class="btn" id="btnMedia" onclick="cemDados()">Media de 100 dados</button>
